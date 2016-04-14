@@ -10,26 +10,41 @@ body {
 .background-image {
 
 	/* Set rules to fill background */
-  min-height: 100%;
-  min-width: 1024px;
+	min-height: 100%;
+	min-width: 1024px;
 
-  /* Set up proportionate scaling */
-  width: 100%;
-  height: auto;
-	background:url("Villa-6.jpg");
-  /* Set up positioning */
-  position: fixed;
-  top: 0;
-  left: 0;
-	filter: blur(3px);
+	/* Set up proportionate scaling */
+	width: 100%;
+	height: auto;
+	/*background:url("Villa-6.jpg");*/
+	/* Set up positioning */
+	position: fixed;
+	top: 0;
+	left: 0;
+	filter: blur(4px);
+	-webkit-filter: blur(4px); /* added for Chrome, Safari, Opera */
+	-moz-filter: blur(4px);
+	-o-filter: blur(4px);
+	-ms-filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='4');
 	background-size: cover;
 	background-repeat: no-repeat;
 }
+.google-map {
+	position: relative;
+}
+.text-about{
+	background-color: rgb(255,255,255);
+
+	background-color: rgba(255,255,255,0.4);
+
+}
+
 .about{
 	position:relative;
 	z-index:2;
 	color:black;
 	padding-top: 60px;
+
 }
 .about-kalathas {
 	width: 50%;
@@ -44,6 +59,19 @@ body {
 	padding-top: 60px;
 
 }
+.row-contact {
+	background-color: rgb(255,255,255);
+
+	background-color: rgba(255,255,255,0.4);
+}
+.airbnb-embed-frame {
+	position: relative;
+	height: 445px;
+	margin-top: -10px;
+	width: 50%;
+
+}
+
 .photos {
 	padding-top: 60px;
 }

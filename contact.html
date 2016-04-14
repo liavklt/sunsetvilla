@@ -15,13 +15,13 @@
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="container">
 				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 						<span class="sr-only">Toggle navigation</span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="#">Sunset Villa</a>
+					<a class="navbar-brand" href="index.html">Sunset Villa</a>
 				</div>
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="navbarCollapse">
@@ -34,14 +34,36 @@
 				</div>
 			</div>
 		</nav>
-		<div class="background-image"> </div>
+		<div style="background-image: url(Villa-6.jpg);" class="background-image"> </div>
 		<div class="container contact">
-				<div class="row">
-					<div class="col-md-7">
-							<div id="googleMap" style="width:500px;height:380px;"></div>
-					</div>
+			<div class="row row-contact">
+
+
+				<div class="col-md-3">
+
+					<h4>
+						FIND US ON <i><ins>airbnb.com</ins>:
+						</i>
+					</h4>
+
+					<div class="airbnb-embed-frame" data-city-link-index="1" data-eb="1460627705_j4ZG/wxa3xC0IPLE" data-eu="VNoZ7SGPZwUbQt/kRsa+blAttWyoQlz42pxGNkOx83HHg0aJFnlUxLS+cwYr +DqovHnlb+jnQ/Jj4kHJHABnZUfoZvNGAWR2bREaFJYsXUYtCcsFhCm+axbb Wpx2gRmO5RzvMzYgoLfxSU6q5PGtMnjvTdEt9EM23shJjFuoC5YdeKrlDdJe IOyRArOSGhADwYTqsxLnXDUp6LaVrQRRXoM+/Md2tOdEStI9NvB8XsPSw3pL R8OKgOkszR+/0uJzWq5K5ZfjYZ/7P1RSXJj16xLFy57GqFOhXwHqoYPy+Say uCOPNVXHinf0+sy+yAk1t3ipRwW5O9hSZ6T2Pr85WQ== " data-embed-source-type="p3" data-trigger-source-type="p3" data-listing-id="11914193" data-photo-url="https://a2.muscache.com/im/pictures/34e18f02-b307-45af-b020-84c78f2a0a4d.jpg?aki_policy=x_large" data-view="listing_frame" style="width: 50%; max-width: 400px; height: 400px;"><img src="https://a2.muscache.com/im/pictures/34e18f02-b307-45af-b020-84c78f2a0a4d.jpg?aki_policy=x_large" style="max-width: 50%;" alt=""/><div><a href="https://www.airbnb.com/rooms/11914193" rel="nofollow"><h4>Kalathas Sunset Villa</h4></a><div>Kalathas, Greece</div><blockquote>Recently built, independent from the floor above, Sunset Villa offers all the comforts.The sunset from Kalathas is absolutely wonderful and the villa is right next to Kalathas beach, not to say above!</blockquote></div><script async="" src="https://www.airbnb.com/embeddable/airbnb_jssdk"></script></div>
+
+				</div>
+				<div class="col-md-4">
+					<h4>
+						and soon on <i><ins>booking.com</ins>!</i>
+					</h4>
+				</div>
+				<div class="col-md-5">
+					<h4>
+						Kalathas Sunset Villa Map:
+					</h4>
+					<div id="googleMap" style="width:400px;height:380px;"></div>
+
+				</div>
 			</div>
 		</div>
+
 		<script>
 			function initialize() {
 				var myLatLng = {lat: 35.556581, lng: 24.088747};
@@ -61,5 +83,5 @@
 			}
 			google.maps.event.addDomListener(window, 'load', initialize);
 		</script>
-</body>
+	</body>
 </html>
