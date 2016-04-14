@@ -5,9 +5,10 @@
 		<title>Sunset Villa</title>
 		<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" type="text/css" href="main.css">
 		<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 		<script type="text/javascript" src="bower_components/bootstrap/js/bootstrap.min.js"></script>
-		<script src="http://maps.googleapis.com/maps/api/js"></script>
+
 	</head>
 	<body>
 		<nav id="myNavbar" class="navbar navbar-default navbar-inverse navbar-static-top" role="navigation">
@@ -26,19 +27,20 @@
 				<div class="collapse navbar-collapse" id="navbarCollapse">
 					<ul class="nav navbar-nav">
 						<li><a href="index.html">Home</a></li>
-						<li class="active"><a href="about.html" target="_blank">About</a></li>
-						<li><a href="" target="_blank">Photos</a></li>
-						<li><a href="contact.html" target="_blank">Contact</a></li>
+						<li class="active"><a href="about.html">About</a></li>
+						<li><a href="photos.html">Photos</a></li>
+						<li><a href="contact.html">Contact</a></li>
 					</ul>
 				</div>
 			</div>
 		</nav>
 
-
+		<div class="background-image"> </div>
 		<div class="container about" >
 
-
 			<div class="row">
+
+
 
 
 				<div class="col-md-7">
@@ -61,32 +63,15 @@
 					</p>
 				</div>
 				<div class="col-md-5">
-					<div id="googleMap" style="width:500px;height:380px;"></div>
-
-
+<!--add a few Kalathas photos,  neighborhood, beach, sunset -->
+					<img class="about-kalathas" src="photos/image.jpg">
+					<img class="about-kalathas" src="photos/image2.jpg">
 				</div>
 			</div>
+
 		</div>
 
 
-		<script>
-			function initialize() {
-				var myLatLng = {lat: 35.556581, lng: 24.088747};
-				var mapProp = {
-					center: myLatLng,
-					zoom:15,
-					mapTypeId:google.maps.MapTypeId.SATELLITE
-				};
-				var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
-				var marker = new google.maps.Marker({
-					position: myLatLng,
-					map: map,
-					title: 'Sunset Villa'
-				});
 
-
-			}
-			google.maps.event.addDomListener(window, 'load', initialize);
-		</script>
 	</body>
 </html>
