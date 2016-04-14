@@ -1,6 +1,0 @@
-http://www.lokeshdhakar.com/projects/lightbox2/
-http://getbootstrap.com/examples/carousel/
-http://stackoverflow.com/questions/26402156/put-div-below-navigation-bar-and-dont-overlap-content
-http://codepen.io/aniketpant/pen/DsEve
-http://stackoverflow.com/questions/20039765/how-to-apply-a-css-3-blur-filter-to-a-background-image
-https://css-tricks.com/almanac/properties/f/filter/
