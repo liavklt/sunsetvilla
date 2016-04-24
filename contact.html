@@ -8,7 +8,7 @@
 		<link rel="stylesheet" type="text/css" href="main.css">
 		<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 		<script type="text/javascript" src="bower_components/bootstrap/js/bootstrap.min.js"></script>
-		<script src="http://maps.googleapis.com/maps/api/js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js"></script>
 	</head>
 	<body>
 		<nav id="myNavbar" class="navbar navbar-default navbar-inverse navbar-static-top" role="navigation">
@@ -29,7 +29,8 @@
 						<li><a href="index.html">Home</a></li>
 						<li><a href="about.html">About</a></li>
 						<li><a href="photos.html">Photos</a></li>
-						<li class="active"><a href="contact.html">Contact</a></li>
+						<li class="active"><a href="contact.html">Book</a></li>
+						<li><a href="map.html">Map</a></li>
 					</ul>
 				</div>
 			</div>
@@ -49,39 +50,21 @@
 					<div class="airbnb-embed-frame" data-city-link-index="1" data-eb="1460627705_j4ZG/wxa3xC0IPLE" data-eu="VNoZ7SGPZwUbQt/kRsa+blAttWyoQlz42pxGNkOx83HHg0aJFnlUxLS+cwYr +DqovHnlb+jnQ/Jj4kHJHABnZUfoZvNGAWR2bREaFJYsXUYtCcsFhCm+axbb Wpx2gRmO5RzvMzYgoLfxSU6q5PGtMnjvTdEt9EM23shJjFuoC5YdeKrlDdJe IOyRArOSGhADwYTqsxLnXDUp6LaVrQRRXoM+/Md2tOdEStI9NvB8XsPSw3pL R8OKgOkszR+/0uJzWq5K5ZfjYZ/7P1RSXJj16xLFy57GqFOhXwHqoYPy+Say uCOPNVXHinf0+sy+yAk1t3ipRwW5O9hSZ6T2Pr85WQ== " data-embed-source-type="p3" data-trigger-source-type="p3" data-listing-id="11914193" data-photo-url="https://a2.muscache.com/im/pictures/34e18f02-b307-45af-b020-84c78f2a0a4d.jpg?aki_policy=x_large" data-view="listing_frame" style="width: 50%; max-width: 400px; height: 400px;"><img src="https://a2.muscache.com/im/pictures/34e18f02-b307-45af-b020-84c78f2a0a4d.jpg?aki_policy=x_large" style="max-width: 50%;" alt=""/><div><a href="https://www.airbnb.com/rooms/11914193" rel="nofollow"><h4>Kalathas Sunset Villa</h4></a><div>Kalathas, Greece</div><blockquote>Recently built, independent from the floor above, Sunset Villa offers all the comforts.The sunset from Kalathas is absolutely wonderful and the villa is right next to Kalathas beach, not to say above!</blockquote></div><script async="" src="https://www.airbnb.com/embeddable/airbnb_jssdk"></script></div>
 
 				</div>
-				<div class="col-md-4">
-					<h4>
+				<div class="col-md-4 contact-booking">
+					<h4 style="text-align: center; ">
 						and soon on <i><ins>booking.com</ins>!</i>
 					</h4>
 				</div>
 				<div class="col-md-5">
-					<h4>
-						Kalathas Sunset Villa Map:
+					<h4 style="text-align: center; ">
+						... soon on <i><ins>tripadvisor Holiday Lettings</ins>!</i>
 					</h4>
-					<div id="googleMap" style="width:400px;height:380px;"></div>
+
 
 				</div>
 			</div>
 		</div>
 
-		<script>
-			function initialize() {
-				var myLatLng = {lat: 35.556581, lng: 24.088747};
-				var mapProp = {
-					center: myLatLng,
-					zoom:15,
-					mapTypeId:google.maps.MapTypeId.SATELLITE
-				};
-				var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
-				var marker = new google.maps.Marker({
-					position: myLatLng,
-					map: map,
-					title: 'Sunset Villa'
-				});
 
-
-			}
-			google.maps.event.addDomListener(window, 'load', initialize);
-		</script>
 	</body>
 </html>
