@@ -6,7 +6,9 @@ body {
 .navbar {
 	margin-bottom: 5px;
 }
-
+.sunset {
+	margin-top: 30px;
+}
 .background-image {
 
 	/* Set rules to fill background */
