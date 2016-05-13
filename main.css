@@ -3,6 +3,7 @@ body {
 
 
 }
+
 .navbar {
 	margin-bottom: 5px;
 }
@@ -25,6 +26,7 @@ body {
 	left: 0;
 	filter: blur(4px);
 	-webkit-filter: blur(4px); /* added for Chrome, Safari, Opera */
+
 	-moz-filter: blur(4px);
 	-o-filter: blur(4px);
 	-ms-filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='4');
@@ -82,7 +84,7 @@ body {
 	height: 150px;
 }
 .contact-booking{
-	height: 400px;
+	/*height: 400px;
 	/*vertical-align: middle; */
 }
 .row-map {
@@ -95,3 +97,28 @@ body {
 	color:black;
 	padding-top: 60px;
 }
+
+.booking-embed-frame {
+	background: white;
+	padding: 20px;
+}
+.listing-embed-booking-summary {
+	font-size: 14px;
+	font-family: Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	text-align: justify;
+	color: #565a5c;
+}
+
+
+.tripadvisor-embed-frame {
+	background: white;
+	padding: 20px;
+}
+.listing-embed-tripadvisor-summary {
+	font-size: 14px;
+	font-family: Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	text-align: justify;
+	color: #565a5c;
+}
+
+
