@@ -1,6 +1,6 @@
 body {
 	font-family: Helvetica, sans-serif;
-
+	font-size: 14px;
 
 }
 
@@ -40,7 +40,17 @@ body {
 	background-color: rgb(255,255,255);
 
 	background-color: rgba(255,255,255,0.4);
+	font-size: 13px;
+	font-family: Tahoma;
 
+}
+.table-responsive{
+	overflow-y: visible;
+	height: 100%;
+
+}
+.borderless tbody tr td, .borderless tbody tr th, .borderless thead tr th {
+	border: none;
 }
 
 .about{
@@ -55,7 +65,44 @@ body {
 	height: 50%;
 
 }
+.airbnb-logo-txt {
+	font-family: Century Gothic, sans-serif;
+	font-size: 25px;
+	font-weight: bold;
+	/* color:#FC245A; */
+	margin-top: 30px;
+	margin-bottom:20px;
+}
+.booking-txt , .tripadvisor-txt {
+	margin-top: 60px;
+	margin-bottom:20px;
+}
+.booking-logo-txt {
+	font-family: Tahoma, sans-serif;
+	font-size: 25px;
+	font-weight: bold;
+	/* color: #08088A; */
 
+}
+.com-logo-txt {
+	font-family: Tahoma, sans-serif;
+	font-size: 25px;
+	font-weight: bold;
+	/* color: #30BFDC; */
+
+}
+.trip-logo-txt {
+	font-family: Geneva, sans-serif;
+	font-size: 25px;
+	font-weight: bold;
+	/* color: #000000; */
+}
+.advisor-logo-txt {
+	font-family: Geneva, sans-serif;
+	font-size: 25px;
+	font-weight: bold;
+	/* color: #289048; */
+}
 .contact {
 	position:relative;
 	z-index:2;
@@ -70,10 +117,19 @@ body {
 }
 .airbnb-embed-frame {
 	position: relative;
-	height: 445px;
+	/*height: 445px; */
+	background: white;
+	padding: 20px;
+	/*width: 50%; */
+	padding-bottom: 30px;
 
-	width: 50%;
+}
 
+.listing-embed-airbnb-summary {
+	font-size: 14px;
+	font-family: Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	text-align: justify;
+	color: #565a5c;
 }
 
 .photos {
@@ -101,6 +157,7 @@ body {
 .booking-embed-frame {
 	background: white;
 	padding: 20px;
+	padding-bottom: 30px;
 }
 .listing-embed-booking-summary {
 	font-size: 14px;
@@ -113,6 +170,7 @@ body {
 .tripadvisor-embed-frame {
 	background: white;
 	padding: 20px;
+	padding-bottom: 0px;
 }
 .listing-embed-tripadvisor-summary {
 	font-size: 14px;
@@ -121,4 +179,15 @@ body {
 	color: #565a5c;
 }
 
-
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
