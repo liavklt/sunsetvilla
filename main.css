@@ -191,3 +191,12 @@ body {
     margin: 4px 2px;
     cursor: pointer;
 }
+
+@media only screen and (max-width: 992px){
+
+
+	.sunset>img {
+		width: 100%;
+	}
+	}
+}
