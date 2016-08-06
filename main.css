@@ -3,9 +3,18 @@ body {
 	font-size: 14px;
 
 }
+/*html, body{
+	height:100%;
 
+
+} */
+.carousel {
+  width:100%;
+}
+/*.carousel,.item,.active{height:100%;}
+.carousel-inner{height:100%;} */
 .navbar {
-	margin-bottom: 5px;
+	margin-bottom: 0px;
 }
 .sunset {
 	margin-top: 30px;
@@ -44,14 +53,7 @@ body {
 	font-family: Tahoma;
 
 }
-.table-responsive{
-	overflow-y: visible;
-	height: 100%;
 
-}
-.borderless tbody tr td, .borderless tbody tr th, .borderless thead tr th {
-	border: none;
-}
 
 .about{
 	position:relative;
@@ -157,7 +159,7 @@ body {
 .booking-embed-frame {
 	background: white;
 	padding: 20px;
-	padding-bottom: 30px;
+	padding-bottom: 10px;
 }
 .listing-embed-booking-summary {
 	font-size: 14px;
@@ -178,7 +180,9 @@ body {
 	text-align: justify;
 	color: #565a5c;
 }
-
+#googleMap {
+	margin-bottom: 10px;
+}
 .button {
     background-color: #4CAF50; /* Green */
     border: none;
@@ -198,5 +202,10 @@ body {
 	.sunset>img {
 		width: 100%;
 	}
-	}
+
+
+}
+.carousel-inner > .item > img {
+
+  width: 100%;
 }
