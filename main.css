@@ -4,13 +4,13 @@ body {
 
 }
 /*html, body{
-	height:100%;
+height:100%;
 
 
 } */
-.carousel {
-  width:100%;
-}
+/*.carousel {
+	width:100%;
+} */
 .navbar-brand {
 	font-family: Palatino Linotype;
 	font-weight: bold;
@@ -27,29 +27,29 @@ body {
 	margin-top: 30px;
 }
 /*.carousel-content {
-  position: absolute;
-  top: 20%;
-  right: 50%;
-  z-index: 20;
-  color: white;
-  text-shadow: 0 1px 2px rgba(0,0,0,.6);
-  font-family: 'Dancing Script', cursive;
-	font-size: 60px;
-	font-style: italic;
-  overflow: hidden;
-	width: 30em;
-  white-space:nowrap;
+position: absolute;
+top: 20%;
+right: 50%;
+z-index: 20;
+color: white;
+text-shadow: 0 1px 2px rgba(0,0,0,.6);
+font-family: 'Dancing Script', cursive;
+font-size: 60px;
+font-style: italic;
+overflow: hidden;
+width: 30em;
+white-space:nowrap;
 
-  -webkit-animation: type 8s steps(80, end);
-  animation: type 8s steps(80, end);
+-webkit-animation: type 8s steps(80, end);
+animation: type 8s steps(80, end);
 
 }
 @keyframes type{
-    from { width: 0; }
+from { width: 0; }
 }
 
 @-webkit-keyframes type{
-    from { width: 0; }
+from { width: 0; }
 }
 */
 .background-image {
@@ -217,16 +217,16 @@ body {
 	margin-bottom: 10px;
 }
 .button {
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
+	background-color: #4CAF50; /* Green */
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
 }
 
 @media only screen and (max-width: 992px){
@@ -237,8 +237,8 @@ body {
 	}
 
 
-}
-.carousel-inner > .item > img {
 
-  width: 100%;
+
 }
+
+
