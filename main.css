@@ -9,7 +9,7 @@ height:100%;
 
 } */
 /*.carousel {
-	width:100%;
+width:100%;
 } */
 .navbar-brand {
 	font-family: Palatino Linotype;
@@ -18,6 +18,10 @@ height:100%;
 	/*font-family: 'Dancing Script', cursive; */
 
 
+}
+.navright {
+	float:right;
+	width: 50%;
 }
 
 .navbar {
@@ -52,6 +56,31 @@ from { width: 0; }
 from { width: 0; }
 }
 */
+
+.instafeed {
+	background-color: rgb(255,255,255);
+
+	background-color: rgba(255,255,255,0.4);
+	padding-bottom: 10px;
+}
+
+.tlt {
+	color: white;
+	font-family: Palatino Linotype;
+	font-weight: bold;
+	font-style: italic;
+
+}
+.textillatebg{
+	background: transparent;
+}
+
+.tlt2 {
+	color: white;
+	font-family: Palatino Linotype;
+	font-weight: bold;
+	font-style: italic;
+}
 .background-image {
 
 	/* Set rules to fill background */
