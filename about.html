@@ -7,8 +7,12 @@
 		<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
 		<link rel="stylesheet" type="text/css" href="main.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
 		<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 		<script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="bower_components/instafeed/Instafeed.min.js"></script>
+
 
 	</head>
 	<body>
@@ -32,6 +36,10 @@
 						<li><a href="photos.html">Photos</a></li>
 						<li><a href="bookings.html">Bookings</a></li>
 						<li><a href="contact.html">Contact</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right text-right">
+						<li>Follow us on</li>
+						<li><a href="https://www.instagram.com/kalathassunsetvilla/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a></li>
 					</ul>
 				</div>
 			</div>
@@ -89,11 +97,15 @@
 						Sunset Villa is right above Kalathas beach, very close to the city centre, only 10km away and 4km away from the airport. The bus stop for the public bus service is at the beach.
 					</p>
 				</div>
-				<div class="col-xs-12 col-sm-12 col-md-5 text-center">
+				<div class="col-xs-12 col-sm-12 col-md-12 text-center">
 					<!-- <img width="400" src="http://maps.googleapis.com/maps/api/staticmap?center=Kalathas&zoom=11&scale=1&size=400x250&maptype=roadmap&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:%7CChania&markers=size:mid%7Ccolor:0xff0000%7Clabel:%7CKalathas" alt="Google Map of Kalathas"> -->
 					<!--add a few Kalathas photos,  neighborhood, beach, sunset -->
 
 					<!-- <img class="about-kalathas" src="photos/image2.jpg"> -->
+					<div class ="instafeed" id="instafeed"><h4>
+						Instagram Feed
+						</h4></div>
+
 				</div>
 			</div>
 
@@ -120,6 +132,48 @@
 
 
 	</body>
+	<script type="text/javascript">
+		var feed = new Instafeed({
+			target: 'instafeed',
+			get: 'user',
+			userId: '5603697829',
+			//template: '<a href="{{link}}"><img src="{{image}}" /></a>',
+			clientId: '97ab6a756fe5411ba99e61f72962de77',
+			accessToken: '5603697829.97ab6a7.569de04ab94c4861b50997f9660e7ec2',
+			sortBy: 'most-recent',
+			limit: 10,
+			template: '<h4>{{model.created_time}} {{model.tagsFormatted}}</h4><a href="{{link}}" target="_blank"><img src="{{image}}" /></a>',
+			filter: function(image) {
+
+				var date = new Date(image.created_time*1000);
+
+				m = date.getMonth();
+				d = date.getDate();
+				y = date.getFullYear();
+
+				var month_names = new Array ( );
+				month_names[month_names.length] = "Jan";
+				month_names[month_names.length] = "Feb";
+				month_names[month_names.length] = "Mar";
+				month_names[month_names.length] = "Apr";
+				month_names[month_names.length] = "May";
+				month_names[month_names.length] = "Jun";
+				month_names[month_names.length] = "Jul";
+				month_names[month_names.length] = "Aug";
+				month_names[month_names.length] = "Sep";
+				month_names[month_names.length] = "Oct";
+				month_names[month_names.length] = "Nov";
+				month_names[month_names.length] = "Dec";
+
+				var thetime = month_names[m] + ' ' + d + ' ' + y;
+
+				image.created_time = thetime;
+
+				return true;
+			}
+		});
+		feed.run();
+	</script>
 	<script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -130,4 +184,5 @@
 		ga('send', 'pageview');
 
 	</script>
+
 </html>
